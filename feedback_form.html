@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+    <head>
+        <title> Feedback Form </title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link href="Feedback.css" rel="stylesheet">
+    </head>
+
+    <body class="mainbody">
+
+        <h1 class="mainhead"> Feedback Form </h1>
+        <hr>
+        <br>
+
+        <form class="row g-3" action="http://localhost/phptutorial/connect.php" method="POST">
+
+            <div class="col-md-6">
+                <label for="inputFullName" class="form-label"> Full name </label>
+                <input type="text" class="form-control" id="inputFullname" placeholder="Enter your full name" name="fullname">
+            </div>
+
+            <div class="col-md-6">
+                <label for="inputEmail" class="form-label"> Email ID </label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="yourid@mail.com" name="email">
+            </div>
+            <br>
+
+            <p class="content"> On a scale of 1 to 5, how would you rate our: </p>
+
+            <div class="col-md-4">
+                <label for="design_layout" class="form-label"> Design & Layout </label>
+                <input type="number" class="form-control" id="inputDesLay" placeholder="Any number between 1 & 5" name="des_lay">
+            </div>
+
+            <div class="col-md-4">
+                <label for="contentQuality" class="form-label"> Content Quality </label>
+                <input type="number" class="form-control" id="inputConQual" placeholder="Any number between 1 & 5" name="conqual">
+            </div>
+
+            <div class="col-md-4">
+                <label for="loadingSpeed" class="form-label"> Loading Speed </label>
+                <input type="number" class="form-control" id="inputLoSpeed" placeholder="Any number between 1 & 5" name="lospeed">
+            </div>
+
+            <div class="col-md-4">
+                <label for="mobileResponsive" class="form-label"> Mobile Responsive </label>
+                <input type="number" class="form-control" id="inputDe" placeholder="Any number between 1 & 5" name="mobres">
+            </div>
+
+            <div class="col-md-4">
+                <label for="userExperience" class="form-label"> User Experience </label>
+                <input type="number" class="form-control" id="inputUX" placeholder="Any number between 1 & 5" name="ux">
+            </div>
+
+            <div class="col-md-4">
+                <label for="Accessibility" class="form-label"> Accessibility </label>
+                <input type="number" class="form-control" id="inputAccess" placeholder="Any number between 1 & 5" name="access">
+            </div>
+            <br>
+
+            <div class="col-md-6">
+                <label for="source" class="content"> How did you get to know about this website? </label>
+                <input type="text" class="form-control" id="inputSource" placeholder="Any number between 1 & 5" name="source">
+            </div>
+
+            </div>
+            
+            
+
+            <p class="content"> We would also like to have your valued suggestions, if any: </p>
+
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your suggestions here" name="suggestions"></textarea>
+            
+            </div>
+            <br>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Submit Response</button>
+            </div>
+
+            
+
+        </form>
+
+    </body>
+
+</html>
